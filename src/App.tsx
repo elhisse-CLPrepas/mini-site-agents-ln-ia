@@ -191,6 +191,17 @@ function Footer() {
             </p>
           </div>
         </div>
+        <nav className="community-links" aria-label="Ressources et communauté LN-IA">
+          <h2>Continuer avec LN-IA</h2>
+          <p>Comprendre les transformations de l’IA, produire avec méthode et transmettre sous contrôle humain.</p>
+          <div className="community-actions">
+            <a href="https://elhisse-clprepas.github.io/mini-site-situation-actuelle-ia/" target="_blank" rel="noopener noreferrer">Guide Situation actuelle de l’IA (nouvel onglet)</a>
+            <a href="https://www.facebook.com/abdou.elhisse/" target="_blank" rel="noopener noreferrer">Facebook (nouvel onglet)</a>
+            <a href="https://www.linkedin.com/in/abderrahman-el-hisse-556b693b5/" target="_blank" rel="noopener noreferrer">LinkedIn (nouvel onglet)</a>
+            <a href="https://chat.whatsapp.com/L900Zbek15j3tBtkJnpKaI" target="_blank" rel="noopener noreferrer">Rejoindre le groupe WhatsApp (nouvel onglet)</a>
+          </div>
+          <p className="small">Ces liens ouvrent des services externes qui appliquent leurs propres règles de confidentialité.</p>
+        </nav>
         <div className="footer-bottom">
           <span>L’humain cadre, autorise et valide.</span>
           <a href="#top">Haut de page</a>
@@ -349,6 +360,20 @@ function Article() {
               </figcaption>
             </figure>
           </div>
+        </div>
+      </section>
+      <section className="container poster-resource article-poster" aria-labelledby="article-poster-title">
+        <figure>
+          <a href="./assets/affiche-article-agents-ln-ia.png" download>
+            <img src="./assets/affiche-article-agents-ln-ia.png" width="1024" height="1536" loading="lazy" alt="Affiche de l’article Agents IA : l’action appelle la gouvernance. Une main humaine règle un point de contrôle entre des modules de travail." />
+          </a>
+        </figure>
+        <div>
+          <Eyebrow>L’AFFICHE DU DOSSIER</Eyebrow>
+          <h2 id="article-poster-title">Partager les questions de gouvernance.</h2>
+          <p>Un support visuel pour accompagner la lecture de l’article et ouvrir la discussion dans la communauté LN-IA.</p>
+          <a className="text-link" href="./assets/affiche-article-agents-ln-ia.png" download>Télécharger l’affiche de l’article</a>
+          <p className="small">Illustration conceptuelle générée avec IA à partir du visuel fourni. Elle ne représente pas un système réel ni une certification.</p>
         </div>
       </section>
       <div className="evidence-band">

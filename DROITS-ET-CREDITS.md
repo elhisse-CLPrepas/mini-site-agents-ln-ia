@@ -41,3 +41,6 @@ Aucun partenariat ni parrainage de ces institutions n’est revendiqué.
 ## Logiciels tiers
 
 Les dépendances conservent leurs licences respectives. Le fichier `THIRD-PARTY-LICENSES.txt` reprend les notices des principales dépendances utilisées. `package-lock.json` identifie les versions verrouillées. Les logiciels tiers ne sont pas couverts par les conditions éditoriales LN-IA ci-dessus.
+
+
+Affiche de l’article ajoutée le 19 novembre 2026 : variante générée avec ImageGen à partir du visuel fourni par le propriétaire. Fichier : public/assets/affiche-article-agents-ln-ia.png. Provenance et consigne de production : docs/COMMUNAUTE-ET-AFFICHE.md.

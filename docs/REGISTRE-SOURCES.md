@@ -97,3 +97,8 @@ Hugging Face · 16 juillet 2026 · Déclaration de la partie affectée
 https://huggingface.co/blog/security-incident-july-2026
 
 Intrusion signalée et mesures de réponse. L’étendue des effets clients était encore en cours d’analyse au moment de cette publication.
+
+
+## Ressources de communauté
+
+Les liens sociaux et le guide du propriétaire, relevés le 19 novembre 2026, sont documentés dans COMMUNAUTE-ET-AFFICHE.md. Ils sont distincts des douze références documentaires ci-dessus.

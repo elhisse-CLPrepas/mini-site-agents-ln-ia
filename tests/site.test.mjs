@@ -50,3 +50,24 @@ test("aucune origine publique fictive n’est imposée au pack", async () => {
     assert.doesNotMatch(html, /example\.com/);
   }
 });
+
+test("les liens de communauté sont présents sur les cinq pages sans intégration distante", async () => {
+  const links = [
+    "https://www.facebook.com/abdou.elhisse/",
+    "https://www.linkedin.com/in/abderrahman-el-hisse-556b693b5/",
+    "https://chat.whatsapp.com/L900Zbek15j3tBtkJnpKaI",
+    "https://elhisse-clprepas.github.io/mini-site-situation-actuelle-ia/",
+  ];
+  for (const file of ["index", "cas-pratiques", "gouvernance", "atelier", "sources"]) {
+    const page = await readFile(`dist/${file}.html`, "utf8");
+    for (const url of links) {
+      assert.ok(page.includes(`href="${url}" target="_blank" rel="noopener noreferrer"`), `${file}: ${url}`);
+    }
+    assert.doesNotMatch(page, /connect\.facebook\.net|platform\.linkedin\.com|<iframe/);
+  }
+  const poster = await readFile("dist/assets/affiche-article-agents-ln-ia.png");
+  assert.equal(poster.readUInt32BE(16), 1024);
+  assert.equal(poster.readUInt32BE(20), 1536);
+  const article = await readFile("dist/index.html", "utf8");
+  assert.match(article, /href="\.\/assets\/affiche-article-agents-ln-ia\.png" download/);
+});
